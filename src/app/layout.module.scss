@@ -1,0 +1,9 @@
+.main {
+    background-color: #EDEDE9;
+    & .container {
+        max-width: 600px;
+        min-height: 100vh;
+        margin: 0 auto;
+        color: #555555;
+    }
+}

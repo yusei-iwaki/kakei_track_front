@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import styles from "./layout.module.scss";
 
 export const metadata: Metadata = {
   title: "家計簿アプリ",
@@ -13,8 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className="min-h-screen flex items-center justify-center px-4">
-        {children}
+      <body>
+        <main className={styles.main}>
+          <div className={styles.container}>{children}</div>
+        </main>
       </body>
     </html>
   );
