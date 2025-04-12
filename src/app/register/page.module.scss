@@ -10,7 +10,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 500;
+        height: 550;
         width: 80%;
         & .main {
             width: 80%;
@@ -29,13 +29,25 @@
                 & .input_group {
                     margin-bottom: 2rem;
                     input {
+                        margin-top: 0.3rem;
                         border: #555555 1px solid;
                         border-radius: 10px;
                         height: 2.5rem;
                         width: 100%;
+                        padding: 0 1rem;
+                    }
+                    input:focus {
+                        border-color: #5EBCFF;
+                        box-shadow: 0 0 5px #555555;
+                        outline: none;
+                    }
+                    input:not(:placeholder-shown) {
+                        background-color: #f0f0f0;
+                        
                     }
                 }
                 & .input_button {
+                    margin-top: 1rem;
                     display: flex;
                     justify-content: center;
                 }
