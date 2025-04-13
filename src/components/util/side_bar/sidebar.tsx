@@ -47,7 +47,7 @@ const SideBar: FC = () => {
               pathname === item.href ? styles.active : ""
             }`}
           >
-            <Image src={item.src} alt={item.alt} width={60} height={60} />
+            <Image src={item.src} alt={item.alt} width={30} height={30} />
           </Link>
         ))}
       </div>
@@ -60,7 +60,7 @@ const SideBar: FC = () => {
               pathname === item.href ? styles.active : ""
             }`}
           >
-            <Image src={item.src} alt={item.alt} width={60} height={60} />
+            <Image src={item.src} alt={item.alt} width={30} height={30} />
           </Link>
         ))}
       </div>
