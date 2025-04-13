@@ -1,12 +1,12 @@
 import { FC } from "react";
 
-const EntryIncomePage: FC = () => {
+const RecordsIncomePage: FC = () => {
   return (
     <div>
-      <h1>Entry Income</h1>
+      <h1>Records Income</h1>
       <p>This is the income entry page.</p>
     </div>
   );
 };
 
-export default EntryIncomePage;
+export default RecordsIncomePage;

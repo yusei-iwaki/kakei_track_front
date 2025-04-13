@@ -41,6 +41,7 @@ const SideBar: FC = () => {
       <div className={styles.feature}>
         {sideBarFeatureItems.map((item) => (
           <Link
+            key={item.href}
             href={item.href}
             className={`${styles.item} ${
               pathname === item.href ? styles.active : ""
@@ -53,6 +54,7 @@ const SideBar: FC = () => {
       <div className={styles.feature}>
         {sideBarUtilItems.map((item) => (
           <Link
+            key={item.href}
             href={item.href}
             className={`${styles.item} ${
               pathname === item.href ? styles.active : ""
