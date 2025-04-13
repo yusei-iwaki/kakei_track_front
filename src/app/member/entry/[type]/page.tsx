@@ -3,7 +3,6 @@ import { FC } from "react";
 import styles from "./page.module.scss";
 
 const EntryIncomePage = ({ params }: { params: { type: string } }) => {
-  console.log(params);
   return (
     <div className={styles.mainContent}>
       <ToggleBtn />
