@@ -1,0 +1,20 @@
+.side_bar {
+    border-right: #818181 solid 1px;
+    width: 92;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & .feature {
+        display: flex;
+        flex-direction: column;
+        & .item {
+            padding: 1rem;
+            &:hover {
+                background: #5EBCFF;
+            }
+        }
+        & .active {
+            background: #5EBCFF;
+        }    }
+}

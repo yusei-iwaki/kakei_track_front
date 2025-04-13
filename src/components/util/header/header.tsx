@@ -12,7 +12,7 @@ const Header: FC = () => {
           alt="ロゴアイコン"
           width={60}
           height={60}
-        ></Image>
+        />
       </Link>
 
       <h1>家計簿アプリ</h1>
