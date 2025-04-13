@@ -1,0 +1,21 @@
+.header {
+    background: #FCFCFC;
+    border-bottom: #818181 1px solid;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 1rem;
+    h1 {
+        flex: 1;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #5EBCFF;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

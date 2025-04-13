@@ -1,9 +1,4 @@
 .main {
     background-color: #EDEDE9;
-    & .container {
-        max-width: 700px;
-        min-height: 100vh;
-        margin: 0 auto;
-        color: #555555;
-    }
+    min-height: 100vh;
 }

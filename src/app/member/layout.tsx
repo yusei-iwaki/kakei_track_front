@@ -1,10 +1,12 @@
+import Header from "@/components/util/header/header";
 import { ReactNode } from "react";
+import styles from "./layout.module.scss";
 
 const MemberLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div>
-      <h1>会員ページ</h1>
-      {children}
+      <Header />
+      <div className={styles.content}>{children}</div>
     </div>
   );
 };

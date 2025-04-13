@@ -4,7 +4,7 @@ import styles from "./layout.module.scss";
 
 export const metadata: Metadata = {
   title: "家計簿アプリ",
-  description: "家計簿アプリの説明",
+  description: "web上で管理できる家計簿アプリ",
 };
 
 export default function RootLayout({
@@ -15,9 +15,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
-        <main className={styles.main}>
-          <div className={styles.container}>{children}</div>
-        </main>
+        <main className={styles.main}>{children}</main>
       </body>
     </html>
   );
