@@ -10,8 +10,8 @@ const Header: FC = () => {
         <Image
           src="/images/icon/logo.png"
           alt="ロゴアイコン"
-          width={60}
-          height={60}
+          width={30}
+          height={30}
         ></Image>
       </Link>
 
