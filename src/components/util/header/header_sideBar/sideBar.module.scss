@@ -1,0 +1,45 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0; /* 初期状態で透明 */
+    visibility: hidden; /* 初期状態で非表示 */
+    z-index: 1001;
+    transition: opacity 0.2s ease, visibility 0.2s ease; /* アニメーションを追加 */
+
+    & .sidebar {
+        background: #fff;
+        width: 15rem;
+        height: 100%;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        & .close_button {
+            cursor: pointer;
+        }
+        & .link {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            & .link_item {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                &:hover {
+                    color: #5EBCFF;
+                }
+            }
+            & .active {
+                color: #5EBCFF;
+            }
+        }
+    }
+}
+
+.open {
+    opacity: 1; /* 表示状態で透明度を1に */
+    visibility: visible; /* 表示状態で可視化 */
+}

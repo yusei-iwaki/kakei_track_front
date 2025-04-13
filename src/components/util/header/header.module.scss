@@ -8,6 +8,9 @@
     width: 100%;
     z-index: 1000;
     padding: 0 1rem;
+    & .button {
+        cursor: pointer;
+    }
     h1 {
         flex: 1;
         font-size: 2rem;
