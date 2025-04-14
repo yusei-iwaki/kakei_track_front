@@ -9,11 +9,13 @@ import { SideBarTypes } from "@/types/type_side_bar";
 
 const sideBarFeatureItems: SideBarTypes[] = [
   {
+    type: "entry",
     href: "/member/entry/income",
     src: "/images/icon/entry.png",
     alt: "入力ページ",
   },
   {
+    type: "record",
     href: "/member/records/income",
     src: "/images/icon/record.png",
     alt: "グラフ表示ページ",
@@ -22,11 +24,13 @@ const sideBarFeatureItems: SideBarTypes[] = [
 
 const sideBarUtilItems: SideBarTypes[] = [
   {
+    type: "settings",
     href: "/member/setting",
     src: "/images/icon/setting.png",
     alt: "設定ページ",
   },
   {
+    type: "logout",
     href: "#",
     src: "/images/icon/logout.png",
     alt: "ログアウトページ",
@@ -64,7 +68,7 @@ const SideBar: FC = () => {
               key={item.href}
               href={item.href}
               className={`${styles.item} ${
-                pathname === item.href ? styles.active : ""
+                pathname.includes(item.type) ? styles.active : ""
               }`}
             >
               <Image src={item.src} alt={item.alt} width={30} height={30} />

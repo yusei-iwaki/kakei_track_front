@@ -7,24 +7,28 @@ import { usePathname } from "next/navigation";
 
 const sideBarFeatureItems: SideBarTypes[] = [
   {
+    type: "entry",
     href: "/member/entry/income",
     src: "/images/icon/entry.png",
     alt: "入力ページ",
     text: "収支入力",
   },
   {
+    type: "record",
     href: "/member/records/income",
     src: "/images/icon/record.png",
     alt: "グラフ表示ページ",
     text: "家計簿グラフ",
   },
   {
+    type: "setting",
     href: "/member/setting",
     src: "/images/icon/setting.png",
     alt: "設定ページ",
     text: "設定",
   },
   {
+    type: "logout",
     href: "#",
     src: "/images/icon/logout.png",
     alt: "ログアウトページ",
@@ -58,7 +62,7 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, onClose }) => {
             <Link href={item.href} key={item.href} onClick={onClose}>
               <div
                 className={`${styles.link_item} ${
-                  pathname === item.href ? styles.active : ""
+                  pathname.includes(item.type) ? styles.active : ""
                 }`}
               >
                 <Image

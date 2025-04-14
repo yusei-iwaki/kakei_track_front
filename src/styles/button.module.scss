@@ -5,4 +5,24 @@
     font-size: 1.5rem;
     padding: 0.2rem 0;
     width: 80%;
+    cursor: pointer;
+}
+
+.button_design2 {
+    background: #FCFCFC;
+    color: #555555;
+    border-radius: 20px;
+    border: #818181 solid 1px;
+    font-size: 1rem;
+    padding: 0.2rem 0;
+    width: 100;
+    cursor: pointer;
+    &:hover {
+        background: #5EBCFF;
+        color: #FCFCFC;
+    }
+    &.active {
+        background: #5EBCFF;
+        color: #FCFCFC;
+    }
 }

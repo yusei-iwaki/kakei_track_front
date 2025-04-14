@@ -4,10 +4,10 @@ import styles from "./page.module.scss";
 
 const EntryIncomePage = ({ params }: { params: { type: string } }) => {
   return (
-    <div className={styles.mainContent}>
-      <ToggleBtn />
+    <>
+      <ToggleBtn route={params.type} />
       <h1>収入入力ページ</h1>
-    </div>
+    </>
   );
 };
 
