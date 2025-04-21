@@ -1,0 +1,23 @@
+.date_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 4rem;
+  & .date_button {
+    border: #818181 solid 1px;
+    border-radius: 10px;
+    background: #FCFCFC;
+    width: 4rem;
+    height: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    &:hover {
+      background: #5EBCFF;
+      color: #FCFCFC;
+    }
+  }
+  & .date_text {
+    font-size: 1.5rem;
+  }
+}
