@@ -2,6 +2,8 @@
   padding-top: 4rem;
   display: flex;
   height: 100vh;
+  position: relative;
+  overflow: auto;
   & .content {
     max-width: 700px;
     width: 100%;

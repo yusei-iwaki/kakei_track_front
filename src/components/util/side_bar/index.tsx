@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./sidebar.module.scss";
+import styles from "./index.module.scss";
 import { FC, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";

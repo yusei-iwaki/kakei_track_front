@@ -1,0 +1,23 @@
+.chart_container {
+    width: 100%;
+    height: 350;
+    background: #FCFCFC;
+    border: #818181 1px solid;
+    border-radius: 15px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .amount {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    & .chart_main {
+        width: 70%;
+        height: 65%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,2 @@
+export const PAGE_TYPE_ENTRY = process.env.NEXT_PUBLIC_PAGE_TYPE_ENTRY!;
+export const PAGE_TYPE_RECORDS = process.env.NEXT_PUBLIC_PAGE_TYPE_RECORDS!;

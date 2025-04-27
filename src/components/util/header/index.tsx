@@ -2,8 +2,8 @@
 
 import { FC, useEffect, useState } from "react";
 import Image from "next/image";
-import styles from "./header.module.scss";
-import Sidebar from "./header_sideBar/sideBar";
+import styles from "./index.module.scss";
+import HeaderSidebar from "./header_sideBar";
 
 const Header: FC = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -45,7 +45,7 @@ const Header: FC = () => {
         <h1>家計簿アプリ</h1>
       </header>
       {!isVisible && (
-        <Sidebar
+        <HeaderSidebar
           isOpen={isSidebarOpen}
           onClose={() => setIsSidebarOpen(false)}
         />

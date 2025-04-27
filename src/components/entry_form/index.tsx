@@ -1,13 +1,13 @@
 "use client";
 import { FC, useState } from "react";
-import styles from "./form.module.scss";
+import styles from "./index.module.scss";
 import button from "@/styles/button.module.scss";
 
 interface ToggleButtonProps {
   route: string;
 }
 
-const Form: FC<ToggleButtonProps> = ({ route }) => {
+const EntryForm: FC<ToggleButtonProps> = ({ route }) => {
   const categories = ["食費", "交通費", "娯楽", "水道光熱費", "その他"]; // サンプルデータ
 
   const entry = () => {
@@ -53,4 +53,4 @@ const Form: FC<ToggleButtonProps> = ({ route }) => {
   );
 };
 
-export default Form;
+export default EntryForm;

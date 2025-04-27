@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "./sideBar.module.scss";
+import styles from "./index.module.scss";
 import Image from "next/image";
 import { SideBarTypes } from "@/types/type_side_bar";
 import Link from "next/link";
@@ -41,7 +41,7 @@ interface SidebarProps {
   onClose: () => void;
 }
 
-const Sidebar: FC<SidebarProps> = ({ isOpen, onClose }) => {
+const HeaderSidebar: FC<SidebarProps> = ({ isOpen, onClose }) => {
   const pathname = usePathname();
   return (
     <div
@@ -82,4 +82,4 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, onClose }) => {
   );
 };
 
-export default Sidebar;
+export default HeaderSidebar;

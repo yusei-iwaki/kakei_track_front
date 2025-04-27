@@ -4,7 +4,7 @@ import { format, addMonths, subMonths } from "date-fns";
 import { useRouter } from "next/navigation";
 import { ja } from "date-fns/locale";
 import { useState } from "react";
-import styles from "./date.module.scss";
+import styles from "./index.module.scss";
 
 const DateSwitcher = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
